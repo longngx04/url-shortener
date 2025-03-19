@@ -7,16 +7,20 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
+} from "@/components/ui/form";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <div className="w-full flex flex-col items-center">
-        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">ShortyUrl</h1>
-        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">Paste your link here</p>
+    <div className="flex flex-1 flex-col items-center justify-center p-6 md:p-24">
+      <div className="w-full max-w-3xl mx-auto text-center">
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
+          Shorten Your Links
+        </h1>
+        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          Paste your long URL and get a shortened one.
+        </p>
 
-        <UrlShortenerForm/>
+        <UrlShortenerForm />
       </div>
     </div>
   );
